@@ -133,6 +133,7 @@ class ReservasiController extends Controller
           $reservasi->lapangan_id = $request->lapangan_id;
           $reservasi->tanggal_mulai = $request->tanggal_mulai;
           $reservasi->tanggal_selesai = $request->tanggal_selesai;
+          $reservasi->$_COOKIE
 
           //$reservasi = new Reservasi($request->all()); //SALAH!  Ini membuat INSTANCE baru, bukan UPDATE.
           //Atau dapat menggunakan cara di atas
