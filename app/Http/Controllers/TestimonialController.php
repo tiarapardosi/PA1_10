@@ -64,8 +64,8 @@ class TestimonialController extends Controller
             'your_name' => 'required|string|max:255', // Sesuaikan dengan nama input di form
             'your_email' => 'required|email|max:255', // Sesuaikan dengan nama input di form
             'subject' => 'required|string|max:255',   // Sesuaikan dengan nama input di form
-            'message' => 'required|string',           // Sesuaikan dengan nama input di form
-        ]);
+            'message' => 'required|string',
+            ]);       // Sesuaikan dengan nama input di form
 
         // Jika validasi gagal, kembali ke form dengan error dan input lama
         if ($validator->fails()) {
